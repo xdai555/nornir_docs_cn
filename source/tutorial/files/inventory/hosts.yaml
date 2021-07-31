@@ -1,0 +1,118 @@
+---
+host01.bj:
+    hostname: 127.0.0.1
+    port: 2201
+    username: netdevops
+    password: netdevops
+    platform: linux
+    groups:
+        - bj
+    data:
+        site: bj
+        role: host
+        type: host
+        nested_data:
+            a_dict:
+                a: 1
+                b: 2
+            a_list: [1, 2]
+            a_string: "this is a web server"
+
+spine00.bj:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: netdevops
+    port: 12444
+    platform: ios
+    groups:
+        - bj
+    data:
+        site: bj
+        role: spine
+        type: network_device
+
+spine01.bj:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: ""
+    platform: junos
+    port: 12204
+    groups:
+        - bj
+    data:
+        site: bj
+        role: spine
+        type: network_device
+
+leaf00.bj:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: netdevops
+    port: 12443
+    platform: hp_comware
+    groups:
+        - bj
+    data:
+        site: bj
+        role: leaf
+        type: network_device
+        asn: 65100
+
+leaf01.bj:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: ""
+    port: 12203
+    platform: huawei
+    groups:
+        - bj
+    data:
+        site: bj
+        role: leaf
+        type: network_device
+        asn: 65101
+
+host01.gz:
+    groups:
+        - gz
+    platform: linux
+    data:
+        site: gz
+        role: host
+        type: host
+
+spine01.gz:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: netdevops
+    port: 12444
+    platform: eos
+    groups:
+        - gz
+    data:
+        site: gz
+        role: spine
+        type: network_device
+
+leaf01.gz:
+    hostname: 127.0.0.1
+    username: netdevops
+    password: netdevops
+    port: 12443
+    platform: eos
+    groups:
+        - gz
+    data:
+        site: gz
+        role: leaf
+        type: network_device
+
+host00:
+    groups:
+        - gz
+        - bj
+
+host01:
+    groups:
+        - bj
+        - gz
