@@ -5,6 +5,7 @@
 
 
 .. toctree::
+   :glob:
    :maxdepth: 1
 
    初识 Nornir <01.overview.ipynb>

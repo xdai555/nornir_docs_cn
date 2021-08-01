@@ -24,7 +24,7 @@ Contents
 
    主页 <self>
    入门教程 <tutorial/index>
-.. Howto <howto/index>
+   HowTo指南 <howto/index>
 .. configuration/index
 .. plugins/index
 .. Upgrading <upgrading/index>
