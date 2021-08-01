@@ -1,0 +1,32 @@
+dev1.group_1:
+    port: 22
+    hostname: 192.168.56.20
+    username: username
+    password: password
+    platform: ios
+    connection_options:
+        netmiko:
+            port: 22
+            hostname:
+            username: user
+            password: pass
+            platform: ios
+            extras:
+                optional_args:
+                    secret: secret
+                    session_log: path/to/save_log
+        
+        napalm:
+            platform: ios
+            extras:
+                optional_args:
+                    path: path/to/save_log
+        
+        dummy:
+            hostname: dummy_from_host
+            port:
+            username:
+            password:
+            platform:
+            extras:
+                blah: from_host

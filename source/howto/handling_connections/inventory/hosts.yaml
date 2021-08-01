@@ -1,0 +1,8 @@
+---
+rt01:
+    username: netdevops
+    password: netdevops
+    hostname: 192.168.56.20
+    port: 22
+    platform: huawei_vrp
+        
