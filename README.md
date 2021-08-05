@@ -20,7 +20,7 @@
 
 ## Nornir 一览图
 
-![nornir](tutorial/overview/nornir.svg)
+![nornir](source/tutorial/overview/nornir.svg)
 
 
 ## 其他
