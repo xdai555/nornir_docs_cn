@@ -25,8 +25,8 @@ Contents
    主页 <self>
    入门教程 <tutorial/index>
    HowTo指南 <howto/index>
-   配置文件详解 <configuration/index>
-.. plugins/index
+   配置文件 <configuration/index>
+   插件 <plugins/index>
 .. Upgrading <upgrading/index>
 .. Contribute <contributing/index>
 .. Changelog <changelog/index>
